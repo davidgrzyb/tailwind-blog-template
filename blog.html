@@ -69,9 +69,9 @@
     <!-- Topic Nav -->
     <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
         <div class="block sm:hidden">
-            <a 
-                href="#" 
-                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center" 
+            <a
+                href="#"
+                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
                 @click="open = !open"
             >
                 Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
@@ -79,7 +79,7 @@
         </div>
         <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
             <div class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
-                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Technology <i</a>
+                <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Technology</a>
                 <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Automotive</a>
                 <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Finance</a>
                 <a href="#" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Politics</a>
@@ -186,11 +186,11 @@
     </div>
 
     <footer class="w-full border-t bg-white pb-12">
-        <div 
-            class="relative w-full flex items-center invisible md:visible md:pb-12" 
+        <div
+            class="relative w-full flex items-center invisible md:visible md:pb-12"
             x-data="getCarouselData()"
         >
-            <button 
+            <button
                 class="absolute bg-blue-800 hover:bg-blue-700 text-white text-2xl font-bold hover:shadow rounded-full w-16 h-16 ml-12"
                 x-on:click="decrement()">
                 &#8592;
@@ -198,7 +198,7 @@
             <template x-for="image in images.slice(currentIndex, currentIndex + 6)" :key="images.indexOf(image)">
                 <img class="w-1/6 hover:opacity-75" :src="image">
             </template>
-            <button 
+            <button
                 class="absolute right-0 bg-blue-800 hover:bg-blue-700 text-white text-2xl font-bold hover:shadow rounded-full w-16 h-16 mr-12"
                 x-on:click="increment()">
                 &#8594;
